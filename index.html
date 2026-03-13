@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Portfolio</title>
+
+<meta name="description" content="Personal Portfolio Website">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>My Portfolio</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<img id="pic" src="me.jpg" alt="profile">
+
+<h2>Hello, I am Uday Kiran.K</h2>
+
+<p>A beginner web developer learning HTML, CSS and JavaScript.</p>
+
+</section>
+
+
+<section class="skills">
+
+<h2>My Skills</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>HTML</h3>
+<p>I create structured webpages using HTML.</p>
+</div>
+
+<div class="card">
+<h3>CSS</h3>
+<p>I style websites using CSS layouts and colors.</p>
+</div>
+
+<div class="card">
+<h3>JavaScript</h3>
+<p>I add interactivity to webpages using JavaScript.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="projects">
+
+<h2>Sample Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Animal Website</h3>
+<p>A simple website showing animals and birds.</p>
+</div>
+
+<div class="card">
+<h3>Calculator</h3>
+<p>A basic calculator using JavaScript.</p>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>This personal portfolio website project.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+<p>© 2026 My Portfolio</p>
+</footer>
+
+</body>
+<script>
+    document.getElementById("contactForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+let name = document.getElementById("name").value;
+
+document.getElementById("result").innerText =
+"Thank you " + name + "! Your message and suggestions are received.";
+
+});
+</script>
+</html>
